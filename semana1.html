@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="lion.svg" type="image/svg">
+    <title>Talento +45</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4">
+  </script>
+
+  <style type="text/tailwindcss">
+    @import "tailwindcss"; 
+
+    @layer base {
+      :root {
+        @apply text-sm;
+        line-height: 1.6;
+      }
+
+      h1, h2, h3, h4 {
+        @apply font-bold text-center
+      }
+      p { @apply mb-2 }
+
+      button {
+        @apply rounded-md bg-slate-200 border-1 border-slate-400 px-4 py-1 my-1 text-sm cursor-pointer disabled:opacity-50
+      }
+      details {
+        @apply mb-4 py-2 border-b-slate-700 border-b-1 text-slate-800 
+      }
+      summary {
+        @apply py-1 text-base bg-sky-700 text-white
+      }
+
+      ol {
+        @apply list-decimal list-outside ml-6 mb-4
+      }
+      
+      kbd, code, a {
+        @apply text-blue-800
+      }
+
+      a {
+        @apply border-b-1 
+      }
+
+      input {
+        @apply border-1 px-2
+      }
+
+      hr {
+        @apply my-3
+      }
+
+      blockquote{
+        @apply ml-4 mb-2
+      }
+    }
+  </style>
+
+</head>
+<body class="container w-5/6 mx-auto">
+<h1 class="text-4xl text-slate-600 mb-4">EJERCICIOS SEMANA 1</h1>
+<details><summary>Búsqueda de Ofertas de Empleo</summary>
+  <p>Buscar 10 ofertas de empleo de tu interés.</p>
+  <p>Puedes ver enlaces a portales de empleo <a href="empleo.html" target="_blank">aquí</a>.</p>
+</details>
+<details open>
+  <summary>Análisis de gaps con NotebookLM</summary>
+<h2 class="text-lg">Paso 1. SUBIR FUENTES</h2>
+<p>Crear un cuaderno en NotebookLM llamado DAFO empleo</p>
+<p>Subir las 10 ofertas de empleo y el CV.</p> 
+<p>Además, subir las siguientes webs:</p>
+
+<p>★ <strong>Google/IBM</strong> (Habilidades técnicas y de IA).</p>
+<blockquote>
+  <p><a target="_blank" rel="noopener" 
+    href="https://grow.google/intl/es/certificates/">
+    https://grow.google/intl/es/certificates/</a></p>
+  <p><a target="_blank" rel="noopener" 
+    href="https://www.ibm.com/training/credentials">
+    https://www.ibm.com/training/credentials</a></p>
+</blockquote> 
+
+<p>★ <strong>LinkedIn Learning</strong> (Soft skills y mercado laboral).</p>
+<blockquote><p><a target="_blank" rel="noopener" 
+  href="https://www.linkedin.com/learning">
+  https://www.linkedin.com/learning</a></p></blockquote>
+
+<p>★ <strong>Microsoft Learn</strong> (Herramientas de oficina y datos).</p>
+<blockquote><p><a target="_blank" rel="noopener" 
+  href="https://learn.microsoft.com/es-es/training/">
+  https://learn.microsoft.com/es-es/training/</a></p></blockquote>
+
+<p>★ <strong>Coursera</strong> (Variedad general y prestigio).</p>
+<blockquote><p><a target="_blank" rel="noopener" 
+  href="https://www.coursera.org/browse">
+  https://www.coursera.org/browse</a></p></blockquote>
+
+<h2 class="text-lg my-4">Prompt 1: DIAGNÓSTICO</h2>
+
+<p>"Hazme una lista de mis fortalezas y otra de mis debilidades tomando en cuenta lo que dice mi CV versus lo que piden las ofertas de empleo.</p>
+<p>Ordena esas listas por importancia de acuerdo a lo que se solicita.</p>
+<p>Revisemos mis debilidades. ¿Cómo puedo cerrar ese gap? Indica tiempo, dificultad y precio y ordénalas según ese criterio (tiempo, dificultad y precio)."</p>
+
+<p><em>Con este resultado...</em></p>
+
+<h2 class="text-lg MY-4">Prompt 2: ACCION</h2>
+<p>"Actúa como un Consultor de Carrera experto y Especialista en Selección de Personal. Basándote en todas las fuentes cargadas (mi CV, las 10 ofertas de empleo y los sitios web de formación), realiza las siguientes tareas de forma estructurada:</p>
+
+<p class="font-bold text-sky-600">RECOMENDACIÓN DE CURSOS:</p> 
+<p>Identifica las debilidades más críticas encontradas previamente. Busca en las fuentes web (Google, IBM, Coursera, etc.) los cursos específicos que mejor resuelvan esos gaps. Para cada curso, justifica por qué es el ideal y menciona si ofrece certificación.</p>
+
+<p class="font-bold text-sky-600">OPTIMIZACIÓN DE CV:</p> 
+<p>Indícame secciones exactas o frases de mi CV que debo modificar para resaltar las fortalezas que estas 10 ofertas valoran más. Sugiere cómo redactar logros usando números o impacto medible.</p>
+
+<p class="font-bold text-sky-600">REDACTOR DE CARTAS:</p> 
+<p>Redacta 10 cartas de presentación personalizadas, una para cada oferta de empleo. Cada carta debe:</p>
+<ol>
+<li>Conectar una de mis fortalezas clave con una necesidad específica de la oferta.</li>
+<li>Mencionar brevemente mi plan de formación (los cursos recomendados) para demostrar proactividad en las áreas que aún estoy reforzando.</li>
+<li>Mantener un tono profesional, persuasivo y humano.</li>
+</ol>
+<p>Presenta la información de forma clara, usando tablas para las recomendaciones de cursos si es posible."</p>
+
+</details>
