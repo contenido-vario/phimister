@@ -5,24 +5,74 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="pb.css">
   <title>Portafolio</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4">
+  </script>
+
+  <style type="text/tailwindcss">
+    @import "tailwindcss"; 
+
+    @layer base {
+      :root {
+        @apply text-sm;
+        line-height: 1.6;
+      }
+
+      h1, h2, h3, h4 {
+        @apply font-bold text-center
+      }
+      p { @apply mb-2 }
+
+      button {
+        @apply rounded-md bg-slate-200 border-1 border-slate-400 px-4 py-1 my-1 text-sm cursor-pointer disabled:opacity-50
+      }
+      details {
+        @apply mb-4 py-2 border-b-slate-700 border-b-1 text-slate-800 italic 
+      }
+      summary {
+        @apply py-1 text-base bg-slate-800 text-white
+      }
+
+      ol {
+        @apply list-decimal list-outside ml-6 mb-4
+      }
+      
+      kbd, code, a {
+        @apply text-blue-800
+      }
+
+      a {
+        @apply border-b-1 
+      }
+
+      input {
+        @apply border-1 px-2
+      }
+
+      hr {
+        @apply my-3
+      }
+    }
+  </style>  
 </head>
-<body>
-  <h1>Portafolio</h1>
-  <p>Portafolio de evidencias disponible bajo petición</p>
-  <ul>
-    <li>NotebookLM - Obtener DAFO Personal </li>
-    <li>Gamma - Presentación sobre DAFO</li>    
-    <li>Google Flow - Video (cambiar texto a video)</li>
-    <li>Excel - Tablas de Datos (referencias estructuradas)</li> 
-    <li>Excel - Tablas Dinámicas</li>
-    <li>Power BI - Dashboards varios</li>
-    <li>CANVA - Informe sobre email profesional, netiqueta digital y gestión de agendas ejecutivas (cruzando prompts de varias IAs)</li>
-    <li>Trello - Planificación de Evento</li>
-    <li>Perplexity - CV con ATS</li>
-    <li>VeraCrypt - Encriptación de Carpetas</li>
-    <li>Tactiq - Transcripción de videoconferencias y redacción de acta</li>
-    <li>Lovable - Creación de página web usando prompts</li>
-    <li>Odoo - Tienda Virtual en ERP</li>
-  </ul>
+<body class="container w-5/6 mx-auto">
+  <h2 class="text-4xl text-slate-600">PHIMISTER'S</h2>
+  <h1 class="text-5xl text-sky-600">TALENTO 45+</h1>
+  <h3 class="text-2xl my-4">Impulso digital: IA y herramientas clave de gestión</h3>
+  <p class="text-xl mb-4">Portafolio de evidencias disponible bajo petición</p>
+  <ol>
+    <li><a href="https://notebooklm.google.com/" target="_blank" rel="noopener"><b>NotebookLM</b></a> - Obtener DAFO Personal </li>
+    <li><a href="https://gamma.app/es" target="_blank" rel="noopener"><b>Gamma</b></a> - Presentación sobre DAFO</li>    
+    <li><a href="https://labs.google/fx/tools/flow" target="_blank" rel="noopener"><b>Google Flow</b></a> - Video (cambiar texto a video)</li>
+    <li><a href="https://outlook.live.com/" target="_blank" rel="noopener"><b>Excel</b></a> - Tablas de Datos (referencias estructuradas)</li> 
+    <li><a href="https://outlook.live.com/" target="_blank" rel="noopener"><b>Excel</b></a> - Tablas Dinámicas</li>
+    <li><a href="https://contenido-vario.github.io/powerbi-inicial" target="_blank" rel="noopener"><b>Power BI</b></a> - Dashboards varios</li>
+    <li><a href="https://www.canva.com/" target="_blank" rel="noopener"><b>CANVA</b></a> - Informe sobre email profesional, netiqueta digital y gestión de agendas ejecutivas (cruzando prompts de varias IAs)</li>
+    <li><a href="https://trello.com/es" target="_blank" rel="noopener"><b>Trello</b></a> - Planificación de Evento</li>
+    <li><a href="https://www.perplexity.ai/" target="_blank" rel="noopener"><b>Perplexity</b></a> - CV con ATS</li>
+    <li><a href="https://contenido-vario.github.io/tuto1-veracrypt/" target="_blank" rel="noopener"><b>VeraCrypt</b></a> - Encriptación de Carpetas</li>
+    <li><a href="https://tactiq.io/" target="_blank" rel="noopener"><b>Tactiq</b></a> - Transcripción de videoconferencias y redacción de acta</li>
+    <li><a href="https://lovable.dev/" target="_blank" rel="noopener"><b>Lovable</b></a> - Creación de página web usando prompts</li>
+    <li><a href="https://odoo.com/" target="_blank" rel="noopener"><b>Odoo</b></a> - Tienda Virtual en ERP</li>
+  </ol>
 </body>
 </html>
