@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="lion.svg" type="image/svg">
+  <title>Talento +45</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4">
+  </script>
+
+  <style type="text/tailwindcss">
+    @import "tailwindcss"; 
+
+    @layer base {
+      :root {
+        @apply text-sm;
+        line-height: 1.6;
+      }
+      h1, h2, h3, h4 { @apply font-bold text-center}
+      p { @apply mb-2 }
+
+      button {
+        @apply rounded-md bg-slate-200 border-1 border-slate-400 px-4 py-1 my-1 text-sm cursor-pointer disabled:opacity-50
+      }
+      details {@apply mb-4 py-2 border-b-slate-700 border-b-1 text-slate-800 italic }
+      summary {@apply py-1 text-base bg-slate-800 text-white}
+      ol { @apply list-decimal list-outside ml-6 mb-4}      
+      kbd, code, a {@apply text-blue-800}
+      a {@apply border-b-1 hover:bg-sky-100 hover:font-bold}
+
+      .card {
+        @apply basis-full md:basis-1/2 lg:basis-1/5 box-border p-2
+        
+      }
+      figure {
+        @apply  text-center;
+      }
+      img {
+        @apply aspect-[1/1] w-full h-full overflow-hidden object-cover rounded-full;
+      }
+      figcaption {
+        @apply text-base m-2
+      }
+
+    }
+  </style>
+
+</head>
+
+<body class="max-w-screen-xl mx-auto px-4">
+  <header class="mb-6">
+    <h2 class="text-4xl text-slate-600 mt-6">PHIMISTER'S</h2>
+    <h1 class="text-5xl text-sky-600">TALENTO 45+</h1>
+    <h3 class="text-2xl my-4">Impulso digital: IA y herramientas clave de gestión</h3>
+  </header>
+  <main class="flex flex-wrap gap-x-10  gap-4 justify-center">
+    <div class="card">
+      <figure><img src="./alumnos/adriana.jpg" alt="Adriana">
+        <figcaption>
+          <a target="_blank" rel="noopener" href="https://peoperationsag.lovable.app/">
+            Adriana Giraldo Linares</a>
+        </figcaption>
+      </figure>
+    </div>    
+    <div class="card">  
+      <figure><img src="./alumnos/alissandra.png" alt="Ali">
+        <figcaption class="text-base">
+          <a target="_blank" rel="noopener" href="https://canvas-shine-builder.lovable.app/">
+            Alissandra Costa Do Nascimento</a>
+        </figcaption>
+      </figure>
+    </div>
+    <div class="card">    
+      <figure><img src="./alumnos/begona.jpg" alt="Begoña">
+        <figcaption>
+          <a target="_blank" rel="noopener" href="https://begonadelafuente.lovable.app/">
+            Begoña Fuente Gonzalez</a>
+        </figcaption>
+      </figure>
+    </div>
+    <div class="card">
+      <figure><img src="./alumnos/lourdes.jpg" alt="Lourdes">
+        <figcaption>
+          <a target="_blank" rel="noopener" href="https://lourdesgonzalezcelma.lovable.app/">
+            Lourdes Gonzalez Celma</a>
+        </figcaption>
+      </figure>
+    </div>
+    <div class="card">    
+      <figure><img src="./alumnos/claudio-senna.jpg" alt="Claudio">
+        <figcaption>
+          <a target="_blank" rel="noopener" href="https://claudio-senna.lovable.app/">
+            Claudio Senna D'Abreu</a>
+        </figcaption>
+      </figure>
+    </div>        
+    <div class="card">
+      <figure><img src="./alumnos/sonia-paez.jpg" alt="Sonia">
+        <figcaption>
+          <a target="_blank" rel="noopener" href="https://soniapaezprofile.lovable.app/">
+            Sonia Páez Domingo</a>
+        </figcaption>
+      </figure>
+    </div>
+    <div class="card">  
+      <figure><img src="./alumnos/sandrine.jpg" alt="Sandrine">
+        <figcaption>
+          <a target="_blank" rel="noopener" href="https://sandrinetrouboul.lovable.app/">
+            Sandrine Trouboul</a>
+        </figcaption>
+      </figure>
+    </div>
+    <div class="card">  
+      <figure><img src="./alumnos/vicky.png" alt="Vicky">
+        <figcaption>
+          <a target="_blank" rel="noopener" href="https://studio-structure-spark.lovable.app/">
+            Virginia Campo Lemus</a>
+        </figcaption>
+      </figure>
+    </div>
+
+    <div class="card">  
+      <figure><img src="./alumnos/sonia-reus.png" alt="Sonia">
+        <figcaption>
+          <a href="#">
+            Sonia Reus Valls</a>
+        </figcaption>
+      </figure>
+    </div>
+    <div class="card">    
+      <figure><img src="./alumnos/niurka.png" alt="Niurka">
+        <figcaption>
+          <a href="#">
+            Niurka Marrero Llerena</a>
+        </figcaption>
+      </figure>
+    </div>    
+    <div class="card">    
+      <figure><img src="./alumnos/silvia.png" alt="Silvia">
+        <figcaption>
+          <a href="#">
+            Silvia Ramonet Segarra</a>
+        </figcaption>
+      </figure>
+    </div>
+
+  </main>
+</body>
+
+</html>
